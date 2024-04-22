@@ -1,0 +1,2 @@
+- link to nccl ut test (communication test)
+  - https://github.com/microsoft/DeepSpeedExamples/tree/master/benchmarks/communication

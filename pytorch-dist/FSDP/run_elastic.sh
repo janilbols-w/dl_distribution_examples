@@ -2,7 +2,7 @@
 set -e
 set -x
 
-HOST_NODE_ADDR=${1:-'10.12.10.67'}
+HOST_NODE_ADDR=${1:-'127.0.0.1'}
 IS_MASTER=${2:-'0'}
 JOB_ID=12315
 

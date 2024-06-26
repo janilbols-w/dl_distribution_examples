@@ -8,7 +8,7 @@ JOB_ID=12315
 
 master_cmd=''
 if [ $IS_MASTER = '1' ];then
-	master_cmd='--node-rank 0'
+	master_cmd='--rdzv-conf is_host=1'
 fi
 
 export TORCH_LOGS=all

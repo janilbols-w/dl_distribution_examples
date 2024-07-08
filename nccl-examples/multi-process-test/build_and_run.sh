@@ -1,4 +1,5 @@
 #!/bin/bash
+NUM_GPU=${NUM_GPU:-'2'}
 rm demo
 
 # lib not found issue
@@ -7,4 +8,4 @@ rm demo
 
 nvcc -I/usr/local/openmpi/include/ -L/usr/local/openmpi/lib/ -lmpi -lnccl main_nccl.cpp -o demo
 
-echo "mpirun -np $ORION_VGPU --allow-run-as-root demo"
+echo "mpirun -np $NUM_GPU --allow-run-as-root demo"
